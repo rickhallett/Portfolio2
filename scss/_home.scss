@@ -1,0 +1,56 @@
+@import './config';
+
+.home {
+    height: 100%;
+    padding-top: 75vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)
+        ),
+        url(../img/salt.jpg) center;
+    background-size: cover;
+    // background-repeat: no-repeat;
+
+    &__name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 2px solid #fff;
+
+        &--last {
+            color: $secondary-color;
+            font-weight: 700;
+        }
+    }
+
+    &__cred {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    &__titles {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .title__item {
+        @include transition-ease;
+        color: lighten($primary-color, 40%);
+        border-right: 2px solid lighten($primary-color, 40%);
+        padding: 0 1rem;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &:nth-last-child(1) {
+            border-right: none;
+        }
+    }
+}
