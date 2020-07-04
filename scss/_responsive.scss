@@ -1,3 +1,9 @@
+@include media-sm {
+    .home {
+        max-width: 100%;
+    }
+}
+
 @include media-md {
     .menu-btn {
         visibility: hidden;
@@ -12,6 +18,7 @@
             height: 100%;
             background: transparent;
             text-align: right;
+            padding-right: 15%;
 
             &__item {
                 display: inline;
@@ -23,4 +30,63 @@
             }
         }
     }
+
+    .home {
+        max-width: 70%;
+    }
+
+    .about__bio {
+        font-size: 1rem;
+    }
+
+    .about__bio-image {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .projects {
+        &__bio-image {
+            height: 40vh;
+        }
+
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    // .contact__list {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+}
+
+
+
+@include media-lg {
+    .home {
+        max-width: 70%;
+    }
+
+    .about__bio-image {
+        height: 70vh;
+        width: 100%;
+    }
+}
+
+@include media-xl {
+    .home {
+        max-width: 50%;
+    }
+
+    .nav {
+        
+        .menu-nav {
+            padding-right: 25%;
+        }
+    }
+
+    
 }
