@@ -1,7 +1,107 @@
+@include media-xs {
+    .home {
+        max-width: 100%;
+        padding-top: 65vh;
+
+        &__name {
+            font-size: 3.5rem;
+        }
+
+        &__cred {
+            font-size: 1.5rem;
+        }
+    }
+
+    .about {
+        padding-bottom: 2rem;
+    
+        &__bio {
+            width: 60%;
+            text-align: center;
+            opacity: 0.6;
+    
+            .text-secondary {
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }
+    
+        &__bio-image {
+            height: 80vh;
+            padding-top: 130vh;
+        }
+    
+        .jobs {
+            width: 60vw;
+            margin: 2rem auto 0 auto;
+            // display: grid;
+            // grid-template-columns: 1fr;
+            // grid-gap: 2rem;
+    
+            &__job {
+                background: lighten($primary-color, 10%);
+                padding: 0.5rem;
+                border-bottom: 5px solid $secondary-color;
+    
+                h2, h3 {
+                    margin: 0.5rem 0;
+                }
+    
+                h6 {
+                    margin: 0.3rem 0;
+                }
+            }
+        }
+    
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        & footer {
+            transform: 
+                rotate(90deg)
+                translate(-3rem, -5rem);
+        }
+    }
+}
+
 @include media-sm {
     .home {
         max-width: 100%;
+        padding-top: 70vh;
+
+        &__name {
+            font-size: 5rem;
+        }
+    
+        &__cred {
+            font-size: 2rem;
+        }
     }
+
+    .about {
+        padding-bottom: 2rem;
+    
+        &__bio {
+            width: 70%;
+            text-align: center;
+            opacity: 0.6;
+    
+            .text-secondary {
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }
+    
+        &__bio-image {
+            height: 80vh;
+            padding-top: 0;
+        }
+
+    }
+
+    
 }
 
 @include media-md {
@@ -35,13 +135,24 @@
         max-width: 70%;
     }
 
-    .about__bio {
-        font-size: 1rem;
-    }
-
-    .about__bio-image {
-        height: 60vh;
-        width: 100%;
+    .about {
+        padding-bottom: 2rem;
+    
+        &__bio {
+            width: 70%;
+            text-align: center;
+    
+            .text-secondary {
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }
+    
+        &__bio-image {
+            height: 80vh;
+            max-width: 70%;
+            margin: 0 auto;
+        }
     }
 
     .projects {
@@ -68,11 +179,35 @@
 @include media-lg {
     .home {
         max-width: 70%;
+        padding-top: 75vh;
+
+        &__name {
+            font-size: 5rem;
+        }
+    
+        &__cred {
+            font-size: 2rem;
+        }
     }
 
-    .about__bio-image {
-        height: 70vh;
-        width: 100%;
+    .about {
+        padding-bottom: 2rem;
+    
+        &__bio {
+            width: 70%;
+            text-align: center;
+    
+            .text-secondary {
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }
+    
+        &__bio-image {
+            height: 80vh;
+            max-width: 70%;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -88,5 +223,27 @@
         }
     }
 
+    .about {
+        padding-bottom: 2rem;
     
+        &__bio {
+            width: 90%;
+            text-align: center;
+    
+            .text-secondary {
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }
+    
+        &__bio-image {
+            height: 80vh;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+        .jobs {
+            width: 50vw;
+        }
+    }
 }
